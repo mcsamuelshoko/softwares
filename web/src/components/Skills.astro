@@ -1,0 +1,29 @@
+---
+import { SectionPage, TechnologiesSection } from '.'
+
+export interface Props {
+  // message: string;
+}
+// const { message } = Astro.props;
+---
+<section id="skills" class="p-8">
+  <SectionPage>
+    <p class="text-4xl font-medium">Skills</p>
+    <p class="text-2xl opacity-50">Tools & Technologies i use</p>
+    <br />
+    <div class="flex justify-center items-center">
+      <img
+        src="https://images.pexels.com/photos/29193172/pexels-photo-29193172/free-photo-of-captivating-cherry-blossoms-with-traffic-light-in-japan.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+        alt="technologies illustration"
+        class="h-[62.5vh] object-fit"
+      />
+    </div>
+    <TechnologiesSection
+    title={"Backend"}
+    description={"backend description"}
+    technologies={[]}
+
+    />
+
+  </SectionPage>
+</section>
