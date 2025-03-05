@@ -1,0 +1,39 @@
+---
+import { Button, SectionPage } from ".";
+
+export interface Props {
+  // message: string;
+}
+// const { message } = Astro.props;
+---
+
+<section id="resume" class="p-8">
+  <SectionPage>
+    <div class="flex flex-wrap space-y-4 justify-between">
+      <div>
+        <p class="text-4xl font-medium">Resume</p>
+        <p class="text-2xl opacity-50">
+          Real projects, real delivery, real results
+        </p>
+      </div>
+      <Button
+        title="Download resume"
+        linkUrl=""
+        target="blank"
+        color="secondary"
+      />
+    </div>
+    <br />
+    <div class="flex justify-center items-center">
+      <div>
+        <div class="p-2 bg-white rounded-t-4xl h-[80vh] overflow-y-clip">
+          <img
+            src="https://images.pexels.com/photos/29193172/pexels-photo-29193172/free-photo-of-captivating-cherry-blossoms-with-traffic-light-in-japan.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+            alt="resume image"
+            class="w-[84vw] rounded-t-3xl"
+          />
+        </div>
+      </div>
+    </div>
+  </SectionPage>
+</section>
