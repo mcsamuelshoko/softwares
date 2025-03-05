@@ -1,0 +1,32 @@
+[
+    {
+        "id":"backend",
+        "title":"Backend",
+        "description":"Handpicked for creating strong systems that manage complex tasks and grow easily. My backend technology focuses on performance, security, and being easy to maintain.",
+        "technologies":["php","java","typescript","golang","csharp","elixir","python"]
+    },
+    {
+        "id":"frontend",
+        "title":"Frontend",
+        "description":"Chosen to create user-friendly interfaces that work well on all devices. For clean code that supports clear design.",
+        "technologies":["jquery","bootstrap","thymeleaf","react","vue","astro"]
+    },
+    {
+        "id":"devops",
+        "title":"DevOps & Infrastructure",
+        "description":"For automating deployments and optimizing infrastructure for reliability. More automation, fewer errors and more efficiency",
+        "technologies":["docker","githubActions"]
+    },
+    {
+        "id":"testing",
+        "title":"Testing & Quality",
+        "description":"When writing comprehensive tests and maintaining code quality. Every feature ships with confidence.",
+        "technologies":["storybook","postman"]
+    },
+    {
+        "id":"version-control",
+        "title":"Version Control & Collaboration",
+        "description":"Managing code with modern Git workflows. Clean commits, clear documentation, & more confidence.",
+        "technologies":["git","github"]
+    }
+]

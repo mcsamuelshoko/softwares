@@ -1,0 +1,247 @@
+[
+    {
+        "id": "azure",
+        "name": "azure",
+        "logoUrl": "https://api.iconify.design/logos:microsoft-azure.svg",
+        "websiteUrl": "https://azure.microsoft.com/"
+    },
+    {
+        "id": "bootstrap",
+        "name": "bootstrap",
+        "logoUrl": "https://api.iconify.design/logos:bootstrap.svg",
+        "websiteUrl": "https://getbootstrap.com/"
+    },
+    {
+        "id": "css",
+        "name": "css",
+        "logoUrl": "https://api.iconify.design/logos:css-3.svg",
+        "websiteUrl": "https://www.w3.org/Style/CSS/Overview.en.html"
+    },
+    {
+        "id": "c++",
+        "name": "c++",
+        "logoUrl": "https://api.iconify.design/logos:c-plusplus.svg",
+        "websiteUrl": "https://cplusplus.com/"
+    },
+    {
+        "id": "csharp",
+        "name": "csharp",
+        "logoUrl": "https://api.iconify.design/devicon:csharp.svg",
+        "websiteUrl": "https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/"
+    },
+    {
+        "id": "daisyui",
+        "name": "daisyui",
+        "logoUrl": "data:image/svg+xml,%3Csvg width='1024' height='1024' viewBox='0 0 1024 1024' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='256' y='670.72' width='512' height='256' rx='128' fill='%231AD1A5'/%3E%3Ccircle cx='512' cy='353.28' r='256' fill='white'/%3E%3Ccircle cx='512' cy='353.28' r='261' stroke='black' stroke-opacity='0.2' stroke-width='10'/%3E%3Ccircle cx='512' cy='353.28' r='114.688' fill='%23FF9903'/%3E%3C/svg%3E",
+        "websiteUrl": "https://daisyui.com/"
+    },
+    {
+        "id": "dart",
+        "name": "dart",
+        "logoUrl": "https://api.iconify.design/logos:dart.svg",
+        "websiteUrl": "https://dart.dev/"
+    },
+    {
+        "id": "django",
+        "name": "django",
+        "logoUrl": "https://api.iconify.design/logos:django-icon.svg",
+        "websiteUrl": "https://www.djangoproject.com/"
+    },
+    {
+        "id": "docker",
+        "name": "docker",
+        "logoUrl": "https://api.iconify.design/logos:docker-icon.svg",
+        "websiteUrl": "https://www.docker.com/"
+    },
+    {
+        "id": "dotnet",
+        "name": "dotnet",
+        "logoUrl": "https://api.iconify.design/logos:dotnet.svg",
+        "websiteUrl": "https://dotnet.microsoft.com/"
+    },
+    {
+        "id": "gatsby",
+        "name": "gatsby",
+        "logoUrl": "https://api.iconify.design/logos:gatsby.svg",
+        "websiteUrl": "https://www.gatsbyjs.com/"
+    },
+    {
+        "id": "git",
+        "name": "git",
+        "logoUrl": "https://api.iconify.design/logos:git-icon.svg",
+        "websiteUrl": "https://git-scm.com/"
+    },
+    {
+        "id": "github",
+        "name": "github",
+        "logoUrl": "https://api.iconify.design/logos:github-icon.svg",
+        "websiteUrl": "https://github.com"
+    },
+    {
+        "id": "golang",
+        "name": "golang",
+        "logoUrl": "https://api.iconify.design/devicon:go.svg",
+        "websiteUrl": "https://go.dev/"
+    },
+    {
+        "id": "figma",
+        "name": "figma",
+        "logoUrl": "https://api.iconify.design/logos:figma.svg",
+        "websiteUrl": "https://www.figma.com/"
+    },
+    {
+        "id": "flutter",
+        "name": "flutter",
+        "logoUrl": "https://api.iconify.design/logos:flutter.svg",
+        "websiteUrl": "https://flutter.dev/"
+    },
+    {
+        "id": "html",
+        "name": "html",
+        "logoUrl": "https://api.iconify.design/logos:html-5.svg",
+        "websiteUrl": "https://html.com"
+    },
+    {
+        "id": "inkscape",
+        "name": "inkscape",
+        "logoUrl": "https://api.iconify.design/devicon:inkscape.svg",
+        "websiteUrl": "https://inkscape.org/"
+    },
+    {
+        "id": "thymeleaf",
+        "name": "java",
+        "logoUrl": "https://api.iconify.design/logos:java.svg",
+        "websiteUrl": "https://www.java.com/"
+    },
+    {
+        "id": "javascript",
+        "name": "javascript",
+        "logoUrl": "https://api.iconify.design/logos:javascript.svg",
+        "websiteUrl": "https://www.javascript.com/"
+    },
+    {
+        "id": "jest",
+        "name": "jest",
+        "logoUrl": "https://api.iconify.design/logos:jest.svg",
+        "websiteUrl": "https://jestjs.io/"
+    },
+    {
+        "id": "jquery",
+        "name": "jquery",
+        "logoUrl": "https://api.iconify.design/devicon:jquery.svg",
+        "websiteUrl": "https://jquery.com/"
+    },
+    {
+        "id": "json",
+        "name": "json",
+        "logoUrl": "https://api.iconify.design/logos:json.svg",
+        "websiteUrl": "https://www.json.org/json-en.html"
+    },
+    {
+        "id": "kubernetes",
+        "name": "kubernetes",
+        "logoUrl": "https://api.iconify.design/logos:kubernetes.svg",
+        "websiteUrl": "https://kubernetes.io/"
+    },
+    {
+        "id": "laravel",
+        "name": "laravel",
+        "logoUrl": "https://api.iconify.design/logos:laravel.svg",
+        "websiteUrl": "https://laravel.com/"
+    },
+    {
+        "id": "lunacy",
+        "name": "lunacy",
+        "logoUrl": "https://raw.githubusercontent.com/maki-studio/.github/b974af72f4208daf7678d1cf772096e55bcc7aa0/profile/lunacy-logo.svg",
+        "websiteUrl": "https://icons8.com/lunacy"
+    },
+    {
+        "id": "materialcss",
+        "name": "materializecss",
+        "logoUrl": "https://api.iconify.design/logos:materializecss.svg",
+        "websiteUrl": "https://materializecss.com/"
+    },
+    {
+        "id": "mongodb",
+        "name": "mongodb",
+        "logoUrl": "https://api.iconify.design/logos:mongodb-icon.svg",
+        "websiteUrl": "https://www.mongodb.com/"
+    },
+    {
+        "id": "mysql",
+        "name": "mysql",
+        "logoUrl": "https://api.iconify.design/logos:mysql-icon.svg",
+        "websiteUrl": "https://www.mysql.com/"
+    },
+    {
+        "id": "postgresql",
+        "name": "postgresql",
+        "logoUrl": "https://api.iconify.design/logos:postgresql.svg",
+        "websiteUrl": "https://www.postgresql.org/"
+    },
+    {
+        "id": "php",
+        "name": "php",
+        "logoUrl": "https://api.iconify.design/logos:php.svg",
+        "websiteUrl": "https://www.php.net/"
+    },
+    {
+        "id": "python",
+        "name": "python",
+        "logoUrl": "https://api.iconify.design/logos:python.svg",
+        "websiteUrl": "https://python.org"
+    },
+    {
+        "id": "react",
+        "name": "react",
+        "logoUrl": "https://api.iconify.design/logos:react.svg",
+        "websiteUrl": "https://react.dev"
+    },
+    {
+        "id": "sass",
+        "name": "sass",
+        "logoUrl": "https://api.iconify.design/logos:sass.svg",
+        "websiteUrl": "https://sass-lang.com/"
+    },
+    {
+        "id": "spring",
+        "name": "spring",
+        "logoUrl": "https://api.iconify.design/logos:spring-icon.svg",
+        "websiteUrl": "https://spring.io/"
+    },
+    {
+        "id": "sqlServer",
+        "name": "sqlserver",
+        "logoUrl": "https://api.iconify.design/devicon:azuresqldatabase.svg",
+        "websiteUrl": "https://www.microsoft.com/en-za/sql-server/sql-server-downloads"
+    },
+    {
+        "id": "tailwindCss",
+        "name": "tailwindCss",
+        "logoUrl": "https://api.iconify.design/logos:tailwindcss-icon.svg",
+        "websiteUrl": "https://tailwindcss.com/"
+    },
+    {
+        "id": "tinymce",
+        "name": "tinymce",
+        "logoUrl": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='98' height='32' fill='%231976D2' viewBox='0 0 98 32'%3E%3Cg id='logo-fill'%3E%3Ctitle%3ETiny Logo%3C/title%3E%3Cpath d='M84.831 7.352l3.216 9.055.766 2.762.918-2.762 3.216-9.055H98l-8.437 23.574L84.112 32l2.25-6.385-6.584-18.263h5.053zM20.24 0c5.206.03 10.35 4.357 10.35 10.662 0 0 .032 1.602.036 3.54v.81c-.001.365-.004.735-.007 1.103l-.007.55c-.023 1.548-.077 2.989-.19 3.739-.72 4.817-4.318 8.146-9.278 8.99-4.47.874-7.12 1.38-7.977 1.549-.367.077-1.99.291-2.694.291-5.45 0-10.395-4.08-10.472-10.662v-1.081l.001-.186v-.406c.002-.709.004-1.578.008-2.472l.003-.539c.008-1.709.023-3.414.05-4.198.183-4.802 3.505-8.683 9.828-9.926L17.943.2C18.678.061 19.489 0 20.239 0zm25.392 2.44v4.912h4.594v4.45h-4.594v7.674c0 1.504 1.133 2.149 1.838 2.149.603 0 1.151-.068 1.71-.222l.28-.085 1.072 3.53c-.46.307-1.837 1.074-4.44 1.074-2.604 0-5.299-1.995-5.36-5.371-.043-2.124-.046-4.832-.007-8.124l.007-.625h-3.215v-4.45h3.215v-3.96l4.9-.952zM23.883 5.6L11.635 7.976v4.787l-4.899.95V25.65l12.248-2.378v-4.786l4.899-.951V5.599zm47.78 1.291c4.265-.03 7.499 3.335 7.65 7.577l.006.25v10.897h-4.9v-10.13c-.016-2.301-1.685-4.158-3.981-4.143-2.228.015-4.181 1.733-4.284 3.936l-.004.208v10.13h-4.9V7.351h4.44l.17 2.133c1.423-1.566 3.52-2.579 5.802-2.594zm-13.475.46v18.264h-4.9V7.352h4.9zm-39.204 3.986v7.149l-7.349 1.427v-7.15l7.349-1.426zM58.187 0v4.773l-4.9.952V.952l4.9-.952z' transform='translate(-16 -12) translate(16 12)'%3E%3C/path%3E%3C/g%3E%3C/svg%3E",
+        "websiteUrl": "https://www.tiny.cloud/"
+    },
+    {
+        "id": "thymeleaf",
+        "name": "thymeleaf",
+        "logoUrl": "https://api.iconify.design/logos:thymeleaf-icon.svg",
+        "websiteUrl": "https://www.thymeleaf.org/"
+    },
+    {
+        "id": "typescript",
+        "name": "typescript",
+        "logoUrl": "https://api.iconify.design/logos:typescript-icon.svg",
+        "websiteUrl": "https://www.typescriptlang.org/"
+    },
+    {
+        "name": "",
+        "logoUrl": "",
+        "websiteUrl": ""
+    }
+]

@@ -1,0 +1,127 @@
+[
+    {
+        "id":"prj0",
+        "platform": "web",
+        "type": "Frontend",
+        "name": "My SWE Portfolio",
+        "title": "Portfolio",
+        "technologies": [
+            "Typescript",
+            "Gatsby",
+            "React",
+            "TailwindCss",
+            "Css",
+            "Json"
+        ],
+        "description": "My portfolio website showcasing my skills, progress and career as a software engineer.",
+        "caseStudy": "Its always a good idea to have a portfolio to showcase your work and projects to friends, future employers, other prospects and especially to yourself as a good reminder of the humble beginnings as you look back. The portfolio uses a static site generator (gatsby) and uses the (typescript) version for the benefit and correctness of typed languages.The visual design was inspired by material and the use of rounded and casual icons to fit the them, along with a clean yet vibrant and simple fusion was a successful blend and quite enticing.",
+        "experience": "After a long time trying to shy away from React and being unsure of what to think about it. i finally jumped into it to check it out. Friends would cheer and recommend to try it out but as a backend lover i didn't think of venturing into it. until the thought of jobs requiring it as a part of fullstack developers and engineers, and it along with angular being the pioneers of old, it then was a matter of time to chose between the two. i then read a book from syncfusion.com called, 'React Succinctly' and from there it was a fun ride.Then gatsby was out of curiosity about static site generators along with the adoption of typescript and trying it out live on a working project so i can truly appreciate and see its pros and cons.",
+        "bannerUrl": "https://github.com/mcsamuelshoko/readme/blob/main/src/images/projects/portfolio/banner.png?raw=true",
+        "logoUrl": "https://raw.githubusercontent.com/mcsamuelshoko/readme/3dd46cdef054e046be507558bef9d0cbbafed4dc/design/maki-logo-perfectedx4800.svg",
+        "openUrl": "#",
+        "moreUrl": "projects/portfolio",
+        "altText": "",
+        "imageUrls": [
+            "https://github.com/mcsamuelshoko/readme/blob/main/src/images/projects/portfolio/image1.png?raw=true",
+            "https://github.com/mcsamuelshoko/readme/blob/main/src/images/projects/portfolio/image2.png?raw=true",
+            "https://github.com/mcsamuelshoko/readme/blob/main/src/images/projects/portfolio/image3.png?raw=true",
+            "https://github.com/mcsamuelshoko/readme/blob/main/src/images/projects/portfolio/image4.png?raw=true"
+        ],
+        "repositoryUrl": "https://github.com/mcsamuelshoko/readme"
+    },
+    {
+        "id":"prj1",
+        "platform": "web",
+        "type": "Fullstack",
+        "name": "Teachers Portal",
+        "title": "Mudzidzisi",
+        "technologies": [
+            "Java",
+            "Spring",
+            "Thymeleaf",
+            "Docker",
+            "Postgresql",
+            "Mongodb",
+            "DaisyUI",
+            "TailwindCss",
+            "tinymce"
+        ],
+        "description": "Teachers portal for the ministry of education, from job search to retirement.",
+        "caseStudy": "The \"Teachers Portal for the Ministry of Education\" project presented a complex undertaking, addressing the needs of teachers throughout their careers. With Java Spring Boot, Postgres, Thymeleaf, and MongoDB, we built a centralized platform that facilitated job searches, professional development, and retirement planning. Our integration efforts encompassed various data sources, ensuring real-time updates and data consistency. By leveraging Thymeleaf's templating capabilities, we delivered an intuitive user experience. The incorporation of MongoDB enabled powerful insights into teacher performance and educational quality. Through this project, I deepened my understanding of the education sector while honing my technical skills in backend development, database management, and agile practices.",
+        "experience": "I had the privilege of working on a challenging project: building a \"Teachers Portal for the Ministry of Education.\" This comprehensive web application aimed to support teachers throughout their careers, from job search to retirement. Using Java Spring Boot, Postgres, Thymeleaf, and MongoDB, I collaborated with a multidisciplinary team to create a robust and user-friendly platform. We faced the challenge of integrating diverse data sources, which we overcame by implementing a seamless synchronization mechanism. Thymeleaf enabled us to craft dynamic web pages, while MongoDB allowed us to capture and analyze valuable insights. This experience strengthened my skills in collaborative development, agile methodologies, and data integration, while contributing to a system that empowers educators and optimizes educational management.",
+        "bannerUrl": "https://github.com/mcsamuelshoko/readme/blob/main/src/images/projects/teachers-portal/banner.png?raw=true",
+        "logoUrl": "https://github.com/mcsamuelshoko/readme/blob/main/src/images/projects/teachers-portal/logo.svg?raw=true",
+        "openUrl": "https://teachers-portal.onrender.com/",
+        "moreUrl": "projects/mudzidzisi",
+        "altText": "",
+        "imageUrls": [
+            "https://github.com/mcsamuelshoko/readme/blob/main/src/images/projects/teachers-portal/image1.png?raw=true",
+            "https://github.com/mcsamuelshoko/readme/blob/main/src/images/projects/teachers-portal/image2.png?raw=true",
+            "https://github.com/mcsamuelshoko/readme/blob/main/src/images/projects/teachers-portal/image3.png?raw=true",
+            "https://github.com/mcsamuelshoko/readme/blob/main/src/images/projects/teachers-portal/image4.png?raw=true",
+            "https://github.com/mcsamuelshoko/readme/blob/main/src/images/projects/teachers-portal/image5.png?raw=true",
+            "https://github.com/mcsamuelshoko/readme/blob/main/src/images/projects/teachers-portal/image6.png?raw=true",
+            "https://github.com/mcsamuelshoko/readme/blob/main/src/images/projects/teachers-portal/image7.png?raw=true"
+        ],
+        "repositoryUrl": "https://github.com/Chichi06/web_dev_education"
+    },
+    {
+        "id":"prj2",
+        "platform": "mobile",
+        "type": "Android",
+        "name": "PocketDoc App",
+        "title": "PocketDoc",
+        "technologies": [
+            "Dart",
+            "Flutter"
+        ],
+        "description": "An easy to use personal health app, easily access medical professionals near you",
+        "caseStudy": "During the pandemic, I had the opportunity to contribute to the development of an innovative personal health app called \"PocketDoc.\" This user-friendly app aimed to be a reliable assistant, helping individuals improve and maintain their health. Developed as a group project, PocketDoc emerged as a timely solution to address the challenges faced during the pandemic. The app incorporated features inspired by global pandemic trackers, particularly evident in the \"Recovery\" section.\n\nAs part of the development team, I worked collaboratively to create a seamless and intuitive user experience. PocketDoc provided easy access to medical professionals near the user, ensuring prompt healthcare assistance. By leveraging modern technologies, such as location-based services and real-time data, we enabled users to quickly find and connect with nearby healthcare providers.",
+        "experience": "One notable aspect of PocketDoc was its \"Recovery\" section, which reflected the remnants of global pandemic trackers. This section facilitated the monitoring of recovery progress and provided helpful resources and information to support individuals in their post-pandemic journey. By incorporating elements that resonated with the challenges and experiences of the pandemic, PocketDoc aimed to provide a holistic approach to health management.\nThroughout the project, I gained valuable experience in designing and developing a user-centric app, utilizing location-based services, and integrating real-time data. The collaborative nature of the project sharpened my skills in team communication and agile development methodologies. Contributing to PocketDoc has not only expanded my technical expertise but also deepened my understanding of the importance of accessible and personalized healthcare solutions in a rapidly changing world.\n",
+        "bannerUrl": "https://github.com/mcsamuelshoko/readme/blob/main/src/images/projects/pocketdoc/banner-light.png?raw=true",
+        "logoUrl": "https://raw.githubusercontent.com/mcsamuelshoko/pocketdoc/main/web/resources/logos/logo.colour.square.svg",
+        "openUrl": "https://mcsamuelshoko.github.io/pocketdoc/",
+        "moreUrl": "projects/pocketdoc",
+        "altText": "",
+        "imageUrls": [
+            "https://raw.githubusercontent.com/mcsamuelshoko/pocketdoc/main/web/resources/images/showcase/Google%20Pixel%203%20XL%20Screenshot%200.png",
+            "https://raw.githubusercontent.com/mcsamuelshoko/pocketdoc/main/web/resources/images/showcase/Google%20Pixel%203%20XL%20Screenshot%201.png",
+            "https://raw.githubusercontent.com/mcsamuelshoko/pocketdoc/main/web/resources/images/showcase/Google%20Pixel%203%20XL%20Screenshot%203.png",
+            "https://raw.githubusercontent.com/mcsamuelshoko/pocketdoc/main/web/resources/images/showcase/Google%20Pixel%203%20XL%20Screenshot%205.png",
+            "https://raw.githubusercontent.com/mcsamuelshoko/pocketdoc/main/web/resources/images/showcase/Google%20Pixel%203%20XL%20Screenshot%207.png"
+        ],
+        "repositoryUrl": "https://github.com/mcsamuelshoko/pocketdoc"
+    },
+    {  "id":"prj3",
+        "platform": "web",
+        "type": "Fullstack",
+        "name": "Accommo-Venient",
+        "title": "Accommo-Venient",
+        "technologies": [
+            "Php",
+            "Mysql",
+            "Css",
+            "Jquery",
+            "JavaScript",
+            "Html"
+        ],
+        "description": "Off-campus Accomodation for university students, offers search, book & review.",
+        "caseStudy": "Arguably one of my most painful project (growth pains) and best project in terms of experience, wow    and appreciation of development. This is where the love for php, web development, design, css and dynamic pages (using ajax) came from. We couldn't complete when it was time for submission due to scope creep and the sheer excitement of what we could do and how awesome it was, all the things we could do, all the functions we could add to make it cool. For me personally it was like discovering a new toy that could do all kinds of amazing stuff you had not given thought to",
+        "experience": "Fast forward to 2023 and out of nostalgia this project is still on my mind and ive decided to         upload it and add it to the list of projects on my portfolio, showcasing where i came from and also a good feel and boost of self confidence. i am proud of this group project",
+        "bannerUrl": "https://github.com/mcsamuelshoko/readme/blob/main/src/images/projects/accommo-venient/banner.png?raw=true",
+        "logoUrl": "https://github.com/mcsamuelshoko/Accommo-Venient/blob/main/resources/logo.png?raw=true",
+        "openUrl": "https://accommo-venient.onrender.com",
+        "moreUrl": "projects/accommo-venient",
+        "altText": "",
+        "imageUrls": [
+            "https://github.com/mcsamuelshoko/readme/blob/main/src/images/projects/accommo-venient/image1.png?raw=true",
+            "https://github.com/mcsamuelshoko/readme/blob/main/src/images/projects/accommo-venient/image2.png?raw=true",
+            "https://github.com/mcsamuelshoko/readme/blob/main/src/images/projects/accommo-venient/image3.png?raw=true",
+            "https://github.com/mcsamuelshoko/readme/blob/main/src/images/projects/accommo-venient/image4.png?raw=true",
+            "https://github.com/mcsamuelshoko/readme/blob/main/src/images/projects/accommo-venient/image5.png?raw=true",
+            "https://github.com/mcsamuelshoko/readme/blob/main/src/images/projects/accommo-venient/image6.png?raw=true",
+            "https://github.com/mcsamuelshoko/readme/blob/main/src/images/projects/accommo-venient/image7.png?raw=true"
+        ],
+        "repositoryUrl": "https://github.com/mcsamuelshoko/Accommo-Venient"
+    }
+]
