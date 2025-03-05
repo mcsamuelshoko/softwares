@@ -1,0 +1,35 @@
+---
+import { Avatar, SectionPage } from '.'
+
+export interface Props {
+  // message: string;
+}
+// const { message } = Astro.props;
+---
+<section id="about" class="p-8">
+  <SectionPage>
+    <p class="text-4xl font-medium">About</p>
+    <p class="text-2xl opacity-50">Engineer by trade, problem solver by nature</p>
+    <br />
+    <div class="grid grid-cols-1 md:grid-cols-3">
+        <Avatar url='https://github.com/mcsamuelshoko/readme/blob/main/src/images/freelancer-profile.png?raw=true' />
+        <div class="md:col-span-2 px-8">
+          <p>
+            Beyond code, I am a Graphic designer who values both purpose and appearance. I combine my technical skills with design thinking to create great solutions. I enjoy building lasting products that solve real problems. <br>
+            <br>
+            When I'm not building software, you'll find me: <br>
+            — Exploring emerging tech trends and best practices <br>
+            — Learning from engineering podcasts and conference talks <br>
+            — Designing digital products and experiences <br>
+            — Gaming and creating content to stay creative <br>
+            <br>
+            My approach is pragmatic: write maintainable code, solve real problems, and keep learning. I want my work to hit hard and make a difference.
+          </p>
+        </div>
+    </div>
+    <div>
+
+    </div>
+
+  </SectionPage>
+</section>
