@@ -1,0 +1,1 @@
+export const updateWithBaseUrl = (link: string, base: string) => (link.length > 0 && link.startsWith('/')) ? base + link : link;
