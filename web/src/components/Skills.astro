@@ -1,29 +1,54 @@
 ---
-import { SectionPage, TechnologiesSection } from '.'
+import { string } from "astro:schema";
+import { SectionPage, TechnologiesSection } from ".";
+import { getCollection, getEntry } from "astro:content";
 
+// Get all entries from a collection.
+// Requires the name of the collection as an argument.
+const allTechnologies = await getCollection("technologies");
+const allSkills = await getCollection("skills");
+type TechnologyItem = { name: string; logoUrl: string; websiteUrl: string };
+const siftSkills = (
+  selected: string[],
+  fullList: TechnologyItem[]
+): TechnologyItem[] => {
+  const siftedList: TechnologyItem[] = [];
+  selected.forEach((name) => {
+    const t = fullList.filter((fItem) => fItem.name === name);
+    if (t.length > 0) siftedList.push(t[0]);
+  });
+
+
+  return siftedList;
+};
 export interface Props {
-  // message: string;
+  baseUrl: string;
 }
-// const { message } = Astro.props;
+const { baseUrl } = Astro.props;
 ---
+
 <section id="skills" class="p-8">
   <SectionPage>
-    <p class="text-4xl font-medium">Skills</p>
-    <p class="text-2xl opacity-50">Tools & Technologies i use</p>
-    <br />
-    <div class="flex justify-center items-center">
+    <p class="text-4xl lg:text-6xl font-display font-bold">Skills</p>
+    <p class="text-2xl font-display font-medium opacity-50">Tools & Technologies i use</p>
+    <div class="mb-12"></div>
+    <div class="flex justify-center items-center mb-8">
       <img
-        src="https://images.pexels.com/photos/29193172/pexels-photo-29193172/free-photo-of-captivating-cherry-blossoms-with-traffic-light-in-japan.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+        src={baseUrl+"/skills-illustration.png"}
         alt="technologies illustration"
-        class="h-[62.5vh] object-fit"
+        class="md:h-[62.5vh] object-contain"
       />
     </div>
-    <TechnologiesSection
-    title={"Backend"}
-    description={"backend description"}
-    technologies={[]}
-
-    />
-
+    <div class="space-y-12">
+    {
+      allSkills.map((skill) => (
+        <TechnologiesSection
+          title={skill.data.title}
+          description={skill.data.description}
+          technologies={siftSkills(skill.data.technologies, allTechnologies.map(i => i.data))}
+        />
+      ))
+    }
+    </div>
   </SectionPage>
 </section>
