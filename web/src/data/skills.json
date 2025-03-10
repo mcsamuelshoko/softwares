@@ -9,7 +9,7 @@
         "id":"frontend",
         "title":"Frontend",
         "description":"Chosen to create user-friendly interfaces that work well on all devices. For clean code that supports clear design.",
-        "technologies":["jquery","bootstrap","thymeleaf","react","vue","astro"]
+        "technologies":["jquery","bootstrap", "tailwindCss","thymeleaf","react","vue","astro"]
     },
     {
         "id":"devops",
