@@ -1,1 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira%20Code&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM%20Sans:wght@100;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent%20Marker&display=swap");
+
 @import "tailwindcss";
+
+@theme {
+    --color-primary: #040F0F;
+    --color-primary1B: #000000;
+    --color-accent: #53DD6C;
+    --color-offWhite: #F9FAFB;
+    --color-offWhite1A: #F4F4F9;
+    --color-gray1B: #D9D9D9;
+}
+
+@theme {
+    --font-display: "DM Sans", sans-serif;
+    --font-sans: "Inter", sans-serif;
+    --font-mono: "Fira Code", monospace;
+
+    --font-marker: "Permanent Marker", "sans-serif";
+}
+
+@theme {
+    --animate-wiggle: wiggle 1s ease-in-out infinite;
+
+    @keyframes wiggle {
+
+        0%,
+        100% {
+            transform: rotate(-3deg);
+        }
+
+        50% {
+            transform: rotate(3deg);
+        }
+    }
+
+    --animate-infiniteScroll: infiniteScroll 25s linear infinite,
+
+
+    @keyframes infiniteScroll {
+
+        from {
+            transform: 'translateX(0)'
+        }
+
+        to {
+            transform: 'translateX(-100%)'
+        }
+    }
+}
+
+
+body{
+    scroll-behavior: smooth;
+}
