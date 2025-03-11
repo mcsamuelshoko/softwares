@@ -1,5 +1,5 @@
 export const BASE_URL = new URL(
-	"http://localhost:4321"//"https://mcsamuelshoko.github.io/softwares",
+	"https://mcsamuelshoko.github.io/softwares",
 );
 
 export const SOCIAL_URLS = {
