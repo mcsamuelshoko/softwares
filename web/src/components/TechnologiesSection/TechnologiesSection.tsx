@@ -17,7 +17,7 @@ export function TechnologiesSection({ title, description, technologies, animate 
       <div className='flex flex-wrap overflow-y-hidden space-x-8 space-y-4'>
         {
           technologies.map((tech, index) => <div key={title + index} className=''>
-            <img src={tech.logoUrl} alt={tech.name + ' icon'} title={'visit ' + tech.name} className='h-16 lg:h-28' />
+            <img src={tech.logoUrl} alt={tech.name + ' icon'} title={'visit ' + tech.name} className='h-12 lg:h-16' />
             {/* {tech.name} */}
           </div>)
         }
