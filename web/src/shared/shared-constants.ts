@@ -1,10 +1,11 @@
 export const BASE_URL = new URL(
-	"https://mcsamuelshoko.github.io/softwares",
+	"http://localhost:4321"//"https://mcsamuelshoko.github.io/softwares",
 );
 
 export const SOCIAL_URLS = {
 	behance: "https://www.behance.net/mcsamuelshoko",
 	bento: "https://bento.me/mcsamuelshoko",
+	discord:"https://discord.com/users/generalseven",
 	dribbble: "https://dribbble.com/mcsamuelshoko",
 	github: "https://github.com/mcsamuelshoko",
 	linkedIn: "https://www.linkedin.com/in/mc-samuel-shoko-2483731b5/",
