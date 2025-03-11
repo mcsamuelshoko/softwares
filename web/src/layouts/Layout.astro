@@ -1,11 +1,16 @@
+---
+import { BASE_URL } from "../shared/shared-constants"
+
+const baseUrl:string = BASE_URL.href;
+---
 <!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/svg+xml" href={baseUrl+"/favicon.svg"} />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>Mc Samuel Shoko | Software Engineer</title>
 	</head>
 	<body>
 		<slot />
