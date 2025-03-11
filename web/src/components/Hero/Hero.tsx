@@ -24,7 +24,7 @@ export function Hero({ lastUpdated = (new Date().getDate()).toString(), workingO
     <div className='md:col-span-2 space-y-4'>
       <section id='portfolio'>
         <div className='w-full'>
-          <img src="/portfolio-banner.png" alt="portfolio-banner" className='rounded-2xl md:rounded-3xl lg:rounded-4xl object-contain w-full' />
+          <img src={baseUrl+"/portfolio-banner.png"} alt="portfolio-banner" className='rounded-2xl md:rounded-3xl lg:rounded-4xl object-contain w-full' />
         </div>
       </section>
       <section id='bio' className='grid md:grid-cols-2 gap-8'>
@@ -50,7 +50,7 @@ export function Hero({ lastUpdated = (new Date().getDate()).toString(), workingO
       </div>
 
       <div>
-        <img alt="graduation bsc. computer science"src={"/graduation.jpg"} className='rounded-2xl md:rounded-3xl lg:rounded-4xl object-contain min-h-max max-h-screen'/>
+        <img alt="graduation bsc. computer science"src={baseUrl+"/graduation.jpg"} className='rounded-2xl md:rounded-3xl lg:rounded-4xl object-contain min-h-max max-h-screen'/>
         <p className='font-mono opacity-23'>#made_my_mama_proud</p>
         <p className='font-mono hover:opacity-20 opacity-0 transition-all text-sm'>&mdash; remind me not to do this again <b>(going through the pains of a CS degree 😭)</b></p>
       </div>
