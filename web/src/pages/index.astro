@@ -1,15 +1,32 @@
 ---
 import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
+import { Footer, Header, Hero } from '../components';
 import "../styles/global.css";
+import Projects from '../components/Projects.astro';
+import Skills from '../components/Skills.astro';
+import Contact from '../components/Contact.astro';
+import Resume from '../components/Resume.astro';
+import About from '../components/About.astro';
+
+
+import { BASE_URL, CURRENTLY_WORKING_ON } from '../shared/shared-constants';
+const baseUrl: string = BASE_URL.href;
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<h1 class="bg-green-400 text-4xl font-mono font-medium p-8 text-gray-50 m-8">
-		TESTING DEPLOYMENT SUCCESS :)
-	</h1>
-	<Welcome />
+	<Header
+		activeLink='home'
+		baseUrl={baseUrl}
+	/>
+	<Hero workingOn={{title:CURRENTLY_WORKING_ON.title, link:(CURRENTLY_WORKING_ON.website ? CURRENTLY_WORKING_ON.website : CURRENTLY_WORKING_ON.repository)}} baseUrl={baseUrl} />
+	<Skills baseUrl={baseUrl}/>
+	<Projects  />
+	<Resume baseUrl={baseUrl} />
+	<Contact baseUrl={baseUrl} />
+	<About />
+	<Footer baseUrl={baseUrl} />
 </Layout>
