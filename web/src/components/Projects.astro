@@ -1,5 +1,12 @@
 ---
-import { SectionPage } from "./SectionPage";
+import { SectionPage, ProjectCard, Button } from ".";
+import { getCollection, getEntry } from "astro:content";
+import { SOCIAL_URLS } from "../shared/shared-constants";
+
+// Get all entries from a collection.
+// Requires the name of the collection as an argument.
+const allProjects = await getCollection("projects");
+
 export interface Props {
   // message: string;
 }
@@ -8,16 +15,23 @@ export interface Props {
 
 <section id="projects" class="p-8">
   <SectionPage>
-    <p class="text-4xl font-medium">Skills</p>
-    <p class="text-2xl opacity-50">Tools & Technologies i use</p>
-    <br />
-    <div class="flex justify-center items-center">
-      <img
-        src="https://images.pexels.com/photos/29193172/pexels-photo-29193172/free-photo-of-captivating-cherry-blossoms-with-traffic-light-in-japan.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
-        alt="technologies illustration"
-        class="h-[62.5vh] object-fit"
-      />
+    <p class="text-4xl lg:text-6xl font-display font-bold">Projects</p>
+    <p class="text-2xl font-display font-medium opacity-50">Stuff i&apos;ve made that works</p>
+    <div class="mb-12"></div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mb-12">
+      {
+        allProjects.map((project) => (
+          <ProjectCard
+            title={project.data.title}
+            description={project.data.description}
+            openLink={project.data.openUrl}
+            moreLink={project.data.moreUrl}
+            imageUrl={project.data.bannerUrl}
+          />
+        ))
+      }
     </div>
+    <Button title="Github reposiories" linkUrl={SOCIAL_URLS.githubRepositories} target="blank" border={true}  />
 
   </SectionPage>
 </section>
