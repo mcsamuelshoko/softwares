@@ -25,7 +25,7 @@ const { baseUrl } = Astro.props;
             title={project.data.title}
             description={project.data.description}
             openLink={project.data.openUrl}
-            moreLink={project.data.moreUrl}
+            moreLink={baseUrl+project.data.moreUrl}
             imageUrl={project.data.bannerUrl}
           />
         ))
