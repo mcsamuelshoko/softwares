@@ -5,6 +5,7 @@ export const BASE_URL = new URL(
 export const SOCIAL_URLS = {
 	behance: "https://www.behance.net/mcsamuelshoko",
 	bento: "https://bento.me/mcsamuelshoko",
+	designsPortfolio:"https://mcsamuelshoko.github.io/designs/",
 	discord:"https://discord.com/users/generalseven",
 	dribbble: "https://dribbble.com/mcsamuelshoko",
 	figma: "https://www.figma.com/@mcsamuelshoko",
