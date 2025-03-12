@@ -8,9 +8,9 @@ import { SOCIAL_URLS } from "../shared/shared-constants";
 const allProjects = await getCollection("projects");
 
 export interface Props {
-  // message: string;
+  baseUrl: string;
 }
-// const { message } = Astro.props;
+const { baseUrl } = Astro.props;
 ---
 
 <section id="projects" class="p-8">
