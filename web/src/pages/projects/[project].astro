@@ -1,23 +1,231 @@
 ---
 import { getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
+import { Button, Footer, Header, SectionPage } from "../../components";
+import { BASE_URL } from "../../shared/shared-constants";
+import "../../styles/global.css";
+
+const baseUrl: string = BASE_URL.href;
+
+export const getNextAndPrevIndexes = (
+  currentIndex: number,
+  itemsLength: number
+) => {
+  const initialIndex: number = 0;
+
+  if (currentIndex > itemsLength)
+    //unusual error
+    return;
+  if (itemsLength == 1)
+    return {
+      prev: initialIndex,
+      next: initialIndex,
+    };
+  else if (currentIndex == 0)
+    // end of list
+    return {
+      prev: itemsLength - 1, //last item
+      next: currentIndex + 1,
+    };
+  else if (itemsLength - 1 == currentIndex)
+    // end of list
+    return {
+      prev: currentIndex - 1, //prev item
+      next: initialIndex,
+    };
+  else if (itemsLength > initialIndex)
+    // anywhere else in the middle
+    return {
+      prev: currentIndex - 1 >= 0 ? currentIndex - 1 : 0,
+      next: currentIndex + 1 >= itemsLength ? initialIndex : currentIndex + 1, // jump to the start when its at the last item
+    };
+};
 
 export async function getStaticPaths() {
   // Fetch all projects from the "projects" collection
   const allProjects = await getCollection("projects");
+  const nextAndPrevLinkss = { prev: "", next: "" };
 
   return allProjects.map((project) => {
     return {
-      params: { project: project.data.title.split(' ').join('-').toLowerCase() },
-      props: { proj:project },
+      params: {
+        project: project.data.title.split(" ").join("-").toLowerCase(),
+      },
+      props: { proj: project, nextAndPrevUrls: nextAndPrevLinkss },
     };
   });
 }
 
 const { project } = Astro.params;
-const { proj } = Astro.props;
----
-<Layout>
-  <div>Good project, {proj.data.name}!</div>
-</Layout>
+const { proj, nextAndPrevUrls } = Astro.props;
 
+const images: string[] = proj.data.imageUrls || [];
+
+const codeIconUrl:string = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3C!-- Icon from ProIcons by ProCode - https://github.com/ProCode-Software/proicons/blob/main/LICENSE --%3E%3Cpath fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M8.75 6.5L3.25 12l5.5 5.5m6.5-11l5.5 5.5l-5.5 5.5'/%3E%3C/svg%3E";
+const compassIconUrl:string = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3C!-- Icon from ProIcons by ProCode - https://github.com/ProCode-Software/proicons/blob/main/LICENSE --%3E%3Cg fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5'%3E%3Ccircle cx='12' cy='12' r='9.25'/%3E%3Cpath d='M10.195 10.195q.221-.22.475-.404c.382-.275.835-.456 1.74-.818l2.357-.943c.632-.252.947-.379 1.148-.313c.174.058.31.194.368.368c.066.2-.06.517-.313 1.148l-.943 2.357c-.362.905-.543 1.358-.818 1.74q-.183.255-.404.475m-3.61-3.61a4 4 0 0 0-.404.475c-.275.382-.456.835-.818 1.74l-.943 2.357c-.252.632-.379.947-.313 1.148c.058.174.194.31.368.368c.2.066.516-.06 1.148-.313l2.357-.943c.905-.362 1.358-.543 1.74-.818q.255-.183.475-.404m-3.61-3.61l3.61 3.61'/%3E%3C/g%3E%3C/svg%3E";
+const leftIconUrl:string = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3C!-- Icon from ProIcons by ProCode - https://github.com/ProCode-Software/proicons/blob/main/LICENSE --%3E%3Cpath fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M20 12H4.121m6.129 6.75l-5.69-5.69A1.5 1.5 0 0 1 4.122 12m6.129-6.75l-5.69 5.69A1.5 1.5 0 0 0 4.122 12'/%3E%3C/svg%3E";
+const rightIconUrl:string = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3C!-- Icon from ProIcons by ProCode - https://github.com/ProCode-Software/proicons/blob/main/LICENSE --%3E%3Cpath fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M4 12h15.879m-6.129 6.75l5.69-5.69c.292-.292.439-.676.439-1.06M13.75 5.25l5.69 5.69c.292.292.439.676.439 1.06'/%3E%3C/svg%3E";
+---
+
+<Layout>
+  <!-- <div>Good project, {proj.data.name}!</div> -->
+  <Header activeLink="projects" baseUrl={baseUrl} />
+  <section id="project_showcase" class="p-8">
+    <SectionPage>
+      <div class="flex flex-wrap space-y-4 justify-between">
+        <div>
+          <p class="text-4xl lg:text-6xl font-display font-bold capitalize">
+            {proj.data.name}
+          </p>
+          <p class="text-2xl font-display font-medium opacity-50 max-w-2xl">
+            {proj.data.description}
+          </p>
+        </div>
+        <Button
+          title="Next Project"
+          linkUrl={nextAndPrevUrls.next}
+          color="primary"
+          border={true}
+        />
+      </div>
+      <div class="mb-12"></div>
+      <div class="flex justify-center items-center">
+        <div>
+          <div
+            class="p-2 bg-white rounded-t-4xl h-[25vh] md:h-[45vh] lg:h-[80vh] overflow-y-clip"
+          >
+            <img
+              src={proj.data.bannerUrl}
+              alt="resume image"
+              class="w-[84vw] rounded-t-3xl saturate-80 object-contain"
+              style="mask-image: linear-gradient(to bottom, #FDFDFE, transparent);"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="my-12 mx-auto md:px-8 flex flex-wrap justify-center space-x-8 space-y-8"
+      >
+        {
+          proj.data.technologies.map((tech) => (
+            <a target="_blank" href={"SOCIAL_URLS.wakatime"}>
+              <img
+                src={"wakatimeIconUrl"}
+                alt={tech + " icon"}
+                title={"visit " + tech}
+                class="h-12 lg:h-16"
+              />
+            </a>
+          ))
+        }
+      </div>
+      <div
+        class="md:col-span-2 md:bg-primary md:text-white rounded-2xl md:rounded-3xl lg:rounded-4xl md:p-8 lg:p-12 md:text-lg place-content-center flex flex-col max-w-3xl"
+      >
+        <p class="max-w-xl">{proj.data.caseStudy}</p>
+        <div class="flex flex-wrap space-x-4 space-y-8 justify-between py-12 mt-12">
+          <Button
+            title="Visit Site"
+            linkUrl={proj.data.openUrl}
+            target="blank"
+            iconUrl={compassIconUrl}
+          />
+          <Button
+            title="View Code"
+            linkUrl={proj.data.repositoryUrl}
+            target="blank"
+            iconUrl={codeIconUrl}
+          />
+        </div>
+      </div>
+
+      <div></div>
+
+      <div></div>
+    </SectionPage>
+
+    <div class="mt-24"></div>
+    <SectionPage>
+      <div class="flex flex-wrap space-y-4 justify-between">
+        <div>
+          <p class="text-4xl lg:text-6xl font-display font-bold capitalize">
+            Project Images
+          </p>
+          <p class="text-2xl font-display font-medium opacity-50 max-w-2xl">
+            Here are some images of the project
+          </p>
+        </div>
+        <img
+                src={proj.data.logoUrl}
+                alt={proj.data.name + " logo"}
+                title={proj.data.name + " project's logo "}
+                class="h-12 lg:h-16"
+              />
+      </div>
+
+      <div class="mt-8 relative">
+        <div class="carousel-container relative overflow-hidden">
+          <div
+            class="carousel-images flex transition-transform duration-300 ease-in-out"
+          >
+            {
+              proj.data.imageUrls.map((image, index) => (
+                <img
+                  src={image}
+                  alt={`Project Image ${index + 1}`}
+                  class="carousel-image w-full max-h-[90vh] mx-8 rounded-4xl border-8 border-gray-100 saturate-80 object-contain"
+                />
+              ))
+            }
+          </div>
+
+          <!-- Navigation Buttons -->
+          <button
+            class="carousel-prev absolute left-0 top-1/2 transform -translate-y-1/2 bg-primary  text-gray-200 border-4 p-2 rounded-full">
+            <img src={leftIconUrl} alt={'left arrow icon'} class='h-5 invert' />
+          </button>
+          <button
+            class="carousel-next absolute right-0 top-1/2 transform -translate-y-1/2 bg-primary  text-gray-200 border-4 p-2 rounded-full"
+          >
+          <img src={rightIconUrl} alt={'right arrow icon'} class='h-5 invert' />
+          </button>
+        </div>
+      </div>
+    </SectionPage>
+
+    <div class="flex flex-wrap space-x-4 justify-between py-12 mt-12">
+      <Button title="Previous" border={true} linkUrl={nextAndPrevUrls.prev} />
+      <Button
+        title="Next"
+        color="primary"
+        border={true}
+        linkUrl={nextAndPrevUrls.next}
+      />
+    </div>
+  </section>
+  <Footer baseUrl={baseUrl} />
+</Layout>
+<script >
+  // TypeScript logic for the carousel
+
+  // Ensuring the DOM elements are available
+  const prevButton = document.querySelector('.carousel-prev') as HTMLButtonElement;
+  const nextButton = document.querySelector('.carousel-next') as HTMLButtonElement;
+  const carouselImages = document.querySelector('.carousel-images') as HTMLElement;
+
+  let currentIndex = 0;
+
+  const showImage = (index: number): void => {
+    const totalImages = carouselImages.children.length;
+    const newIndex = (index + totalImages) % totalImages; // Wrap around for infinite loop
+    const offset = -newIndex * 100; // Each image takes full width
+    carouselImages.style.transform = `translateX(${offset}%)`;
+    currentIndex = newIndex;
+  };
+
+  prevButton.addEventListener('click', () => showImage(currentIndex - 1));
+  nextButton.addEventListener('click', () => showImage(currentIndex + 1));
+
+  // Initialize the first image
+  showImage(0);
+</script>
