@@ -26,11 +26,12 @@ const verifiedIconUrl:string = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.o
     <div class="grid grid-cols-1 lg:grid-cols-2 space-y-8">
       <div class="flex justify-center items-center">
         <div>
-          <div class="p-2 bg-white rounded-t-4xl lg:h-[80vh] overflow-y-clip">
+          <div class="p-2 bg-white rounded-t-4xl h-[25vh] md:h-[45vh] lg:h-[80vh] overflow-y-clip">
             <img
               src={baseUrl + "/contact-phone.png"}
               alt="contact phone image"
               class="w-full lg:w-[24vw] rounded-t-3xl object-contain"
+              style="mask-image: linear-gradient(to bottom, black, transparent);"
             />
           </div>
         </div>
