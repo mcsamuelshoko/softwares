@@ -36,7 +36,7 @@ export function Hero({ lastUpdated = (new Date().getDate()).toString(), workingO
         </div>
         <div className='space-y-4'>
           <BigButton title='Github' link={SOCIAL_URLS.github} svgUrl={githubIconUrl} styling='w-full' />
-          <BigButton title='Resume' link={SOCIAL_URLS.resume} svgUrl={resumeIconUrl} styling='w-full' />
+          <BigButton title='Resume' color='primary' link={SOCIAL_URLS.resume} svgUrl={resumeIconUrl} styling='w-full' />
         </div>
       </section>
       <section id='current' className='bg-primary text-offWhite rounded-2xl md:rounded-3xl lg:rounded-4xl p-8  text-2xl'>
