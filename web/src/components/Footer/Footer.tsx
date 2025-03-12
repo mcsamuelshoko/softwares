@@ -1,4 +1,5 @@
 import React from 'react';
+import { SOCIAL_URLS } from '../../shared/shared-constants';
 
 // import styles from './Footer.css';
 
@@ -17,13 +18,13 @@ export function Footer({ baseUrl }: FooterProps) {
 
     </div>
     <div className='flex flex-col'>
-      <ul className='space-x-4 space-y-8 flex  flex-wrap justify-between max-w-4xl mx-auto underline'>
-        <li><a href="https://www.linkedin.com/in/mc-samuel-shoko-2483731b5" title="visit LinkedIn">Linkedin</a></li>
-        <li><a href="https://twitter.com/mcsamuelshoko" title="Visit X(Twitter)">X (Twitter)</a></li>
-        <li><a href="https://discord.com/users/generalseven" title="Visit Discord">Discord</a></li>
-        <li><a href="https://github.com/mcsamuelshoko" title="Visit Github">Github</a></li>
-        <li><a href="https://instagram.com/mcsamuelshoko" title="Visit Instagram">Instagram</a></li>
-        <li><a href="https://linktr.ee/mcsamuelshoko" title="visit Linktree profile">Linktree</a></li>
+      <ul className='space-x-4 space-y-8 flex  flex-wrap justify-between max-w-4xl mx-auto '>
+        <li><a target='_blank' href={SOCIAL_URLS.linkedIn} className='underline hover:text-accent transition-all' title="visit LinkedIn">Linkedin</a></li>
+        <li><a target='_blank' href={SOCIAL_URLS.twitter} className='underline hover:text-accent transition-all' title="Visit X(Twitter)">X (Twitter)</a></li>
+        <li><a target='_blank' href={SOCIAL_URLS.discord} className='underline hover:text-accent transition-all' title="Visit Discord">Discord</a></li>
+        <li><a target='_blank' href={SOCIAL_URLS.github} className='underline hover:text-accent transition-all' title="Visit Github">Github</a></li>
+        <li><a target='_blank' href={SOCIAL_URLS.designsPortfolio} className='underline hover:text-accent transition-all' title="See my designs">Designs</a></li>
+        <li><a target='_blank' href={SOCIAL_URLS.linkTree} className='underline hover:text-accent transition-all' title="visit Linktree profile">Linktree</a></li>
       </ul>
     </div>
     <div className='h-16'> </div>
