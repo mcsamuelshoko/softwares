@@ -19,3 +19,22 @@ export const ProjectSchema = z.object({
 });
 export type Project = z.infer<typeof ProjectSchema>;
 
+
+export const SkillSchema = z.object({
+    // id: z.string(),
+    title: z.string(),
+    description: z.string(),
+    technologies: z.array(z.string()),
+})
+
+export type Skill = z.infer<typeof SkillSchema>;
+
+
+export const TechnologySchema = z.object({
+    // id: z.string(),
+    name: z.string(),
+    logoUrl: z.string(),
+    websiteUrl: z.string(),
+})
+
+export type Technology = z.infer<typeof TechnologySchema>;
