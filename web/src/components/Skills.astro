@@ -9,8 +9,8 @@ import { SOCIAL_URLS } from "../shared/shared-constants";
 const allTechnologies = await getCollection("technologies");
 const allSkills = await getCollection("skills");
 
-type TechnologyItem = { name: string; logoUrl: string; websiteUrl: string };
-const siftSkills = (
+export type TechnologyItem = { name: string; logoUrl: string; websiteUrl: string };
+export const siftSkills = (
   selected: string[],
   fullList: TechnologyItem[]
 ): TechnologyItem[] => {
