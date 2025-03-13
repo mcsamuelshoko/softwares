@@ -15,6 +15,7 @@ export function Header({ activeLink = 'home', baseUrl }: Readonly<HeaderProps>) 
       <ul className='flex flex-wrap space-x-4'>
         <li><a href={baseUrl + "/"} className={['', (activeLink == 'home' ? activeLinkStyling : '')].join(' ')}>
           <img src={baseUrl + '/logo.svg'} alt="mcsamuel shoko swe logo" className='h-8' /></a></li>
+        <li><a href={finalUrl + "#"} className={['hover:text-accent transition-all', (activeLink == 'home' ? activeLinkStyling : '')].join(' ')}>Home</a></li>
         <li><a href={finalUrl + "#projects"} className={['hover:text-accent transition-all', (activeLink == 'projects' ? activeLinkStyling : '')].join(' ')}>Projects</a></li>
         <li><a href={finalUrl + "#skills"} className={['hover:text-accent transition-all', (activeLink == 'skills' ? activeLinkStyling : '')].join(' ')}>Skills</a></li>
         <li><a href={finalUrl + "#contact"} className={['hover:text-accent transition-all', (activeLink == 'contact' ? activeLinkStyling : '')].join(' ')}>Contact</a></li>
