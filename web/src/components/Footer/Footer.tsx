@@ -14,11 +14,11 @@ export function Footer({ baseUrl }: FooterProps) {
         <p className='text-7xl font-display font-bold opacity-50'>Mc Samuel Shoko</p>
         <p className='py-8 text-2xl'>Thats all folks!, thanks for stopping by 👋😄</p>
     </div>
-      <img src={baseUrl+"/favicon.svg"} alt="mcsamuel's logo" className='opacity-30 h-64 relative -left-40 z-20' />
+      <img src={baseUrl+"/favicon.svg"} alt="mcsamuel's logo" className='opacity-30 h-64 relative -left-40 z-10' />
 
     </div>
     <div className='flex flex-col'>
-      <ul className='space-x-4 space-y-8 flex  flex-wrap justify-between max-w-4xl mx-auto '>
+      <ul className='relative z-30 space-x-4 space-y-8 flex  flex-wrap justify-between max-w-4xl mx-auto '>
         <li><a target='_blank' href={SOCIAL_URLS.linkedIn} className='underline hover:text-accent transition-all' title="visit LinkedIn">Linkedin</a></li>
         <li><a target='_blank' href={SOCIAL_URLS.twitter} className='underline hover:text-accent transition-all' title="Visit X(Twitter)">X (Twitter)</a></li>
         <li><a target='_blank' href={SOCIAL_URLS.discord} className='underline hover:text-accent transition-all' title="Visit Discord">Discord</a></li>
