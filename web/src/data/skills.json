@@ -3,7 +3,7 @@
         "id":"backend",
         "title":"Backend",
         "description":"Handpicked for creating strong systems that manage complex tasks and grow easily. My backend technology focuses on performance, security, and being easy to maintain.",
-        "technologies":["php","java","typescript","golang","csharp","elixir","python"]
+        "technologies":["php","typescript","golang","csharp","elixir","python","java"]
     },
     {
         "id":"frontend",
@@ -21,7 +21,7 @@
         "id":"testing",
         "title":"Testing & Quality",
         "description":"When writing comprehensive tests and maintaining code quality. Every feature ships with confidence.",
-        "technologies":["storybook","postman"]
+        "technologies":["sonarlint","storybook","postman"]
     },
     {
         "id":"version-control",

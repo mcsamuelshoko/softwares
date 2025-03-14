@@ -1,5 +1,11 @@
 [
     {
+        "id": "astro",
+        "name": "astro",
+        "logoUrl": "https://api.iconify.design/devicon:astro.svg",
+        "websiteUrl": "https://astro.build/"
+    },
+    {
         "id": "azure",
         "name": "azure",
         "logoUrl": "https://api.iconify.design/logos:microsoft-azure.svg",
@@ -60,6 +66,12 @@
         "websiteUrl": "https://dotnet.microsoft.com/"
     },
     {
+        "id": "elixir",
+        "name": "elixir",
+        "logoUrl": "https://api.iconify.design/devicon:elixir.svg",
+        "websiteUrl": "https://elixir-lang.org/"
+    },
+    {
         "id": "gatsby",
         "name": "gatsby",
         "logoUrl": "https://api.iconify.design/logos:gatsby.svg",
@@ -76,6 +88,12 @@
         "name": "github",
         "logoUrl": "https://api.iconify.design/logos:github-icon.svg",
         "websiteUrl": "https://github.com"
+    },
+    {
+        "id": "githubActions",
+        "name": "githubActions",
+        "logoUrl": "https://api.iconify.design/devicon:githubactions.svg",
+        "websiteUrl": "https://github.com/features/actions"
     },
     {
         "id": "golang",
@@ -108,7 +126,7 @@
         "websiteUrl": "https://inkscape.org/"
     },
     {
-        "id": "thymeleaf",
+        "id": "java",
         "name": "java",
         "logoUrl": "https://api.iconify.design/logos:java.svg",
         "websiteUrl": "https://www.java.com/"
@@ -186,6 +204,12 @@
         "websiteUrl": "https://www.php.net/"
     },
     {
+        "id": "postman",
+        "name": "postman",
+        "logoUrl": "https://api.iconify.design/devicon:postman.svg",
+        "websiteUrl": "https://storybook.js.org/"
+    },
+    {
         "id": "python",
         "name": "python",
         "logoUrl": "https://api.iconify.design/logos:python.svg",
@@ -204,10 +228,22 @@
         "websiteUrl": "https://sass-lang.com/"
     },
     {
+        "id": "sonarlint",
+        "name": "sonarlint",
+        "logoUrl": "https://api.iconify.design/logos:sonarlint-icon.svg",
+        "websiteUrl": "https://www.sonarsource.com/products/sonarlint/"
+    },
+    {
         "id": "spring",
         "name": "spring",
         "logoUrl": "https://api.iconify.design/logos:spring-icon.svg",
         "websiteUrl": "https://spring.io/"
+    },
+    {
+        "id": "storybook",
+        "name": "storybook",
+        "logoUrl": "https://api.iconify.design/devicon:storybook.svg",
+        "websiteUrl": "https://storybook.js.org/"
     },
     {
         "id": "sqlServer",
@@ -238,6 +274,12 @@
         "name": "typescript",
         "logoUrl": "https://api.iconify.design/logos:typescript-icon.svg",
         "websiteUrl": "https://www.typescriptlang.org/"
+    },
+    {
+        "id": "vue",
+        "name": "vue",
+        "logoUrl": "https://api.iconify.design/logos:vue.svg",
+        "websiteUrl": "https://vuejs.org/"
     },
     {   "id":"",
         "name": "",
