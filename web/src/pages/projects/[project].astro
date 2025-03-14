@@ -123,7 +123,7 @@ const projectSkills = siftSkills(
         </div>
         <Button
           title="Next Project"
-          linkUrl={nextAndPrevUrls.next}
+          linkUrl={baseUrl + nextAndPrevUrls.next}
           color="primary"
           border={true}
         />
@@ -242,12 +242,12 @@ const projectSkills = siftSkills(
     </SectionPage>
 
     <div class="flex flex-wrap space-x-4 justify-between py-12 mt-12">
-      <Button title="Previous" border={true} linkUrl={nextAndPrevUrls.prev} />
+      <Button title="Previous" border={true} linkUrl={baseUrl + nextAndPrevUrls.prev} />
       <Button
         title="Next"
         color="primary"
         border={true}
-        linkUrl={nextAndPrevUrls.next}
+        linkUrl={baseUrl + nextAndPrevUrls.next}
       />
     </div>
   </section>
