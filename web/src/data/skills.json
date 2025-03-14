@@ -3,13 +3,13 @@
         "id":"backend",
         "title":"Backend",
         "description":"Handpicked for creating strong systems that manage complex tasks and grow easily. My backend technology focuses on performance, security, and being easy to maintain.",
-        "technologies":["php","typescript","golang","csharp","elixir","python","java"]
+        "technologies":["php","typescript","golang","csharp","elixir"]
     },
     {
         "id":"frontend",
         "title":"Frontend",
         "description":"Chosen to create user-friendly interfaces that work well on all devices. For clean code that supports clear design.",
-        "technologies":["jquery","bootstrap", "tailwindCss","react","vue","astro","thymeleaf"]
+        "technologies":["jquery","bootstrap", "tailwindCss","react","vue","astro"]
     },
     {
         "id":"devops",
