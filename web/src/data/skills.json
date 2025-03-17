@@ -3,7 +3,7 @@
         "id":"backend",
         "title":"Backend",
         "description":"Handpicked for creating strong systems that manage complex tasks and grow easily. My backend technology focuses on performance, security, and being easy to maintain.",
-        "technologies":["php","typescript","golang","csharp","elixir"]
+        "technologies":["php","typescript","golang","csharp","elixir","postgresql","mongodb"]
     },
     {
         "id":"frontend",
