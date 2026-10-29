@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Fira%20Code&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira%20Code:wght@100;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM%20Sans:wght@100;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Permanent%20Marker&display=swap");
@@ -7,11 +7,89 @@
 
 @theme {
     --color-primary: #040F0F;
+        --color-primary-50: #f2fbf9;
+        --color-primary-100: #d3f4ee;
+        --color-primary-200: #a8e7dc;
+        --color-primary-300: #74d4c7;
+        --color-primary-400: #47baae;
+        --color-primary-500: #2e9e95;
+        --color-primary-600: #227f79;
+        --color-primary-700: #1f6662;
+        --color-primary-800: #1d5250;
+        --color-primary-900: #1c4543;
+        --color-primary-950: #040f0f;
+
+
     --color-primary1B: #000000;
+        --color-primary1B-50: #f6f6f6;
+        --color-primary1B-100: #e7e7e7;
+        --color-primary1B-200: #d1d1d1;
+        --color-primary1B-300: #b0b0b0;
+        --color-primary1B-400: #888888;
+        --color-primary1B-500: #6d6d6d;
+        --color-primary1B-600: #5d5d5d;
+        --color-primary1B-700: #4f4f4f;
+        --color-primary1B-800: #454545;
+        --color-primary1B-900: #3d3d3d;
+        --color-primary1B-950: #000000;
+
+
     --color-accent: #53DD6C;
+        --color-accent-50: #f0fdf2;
+        --color-accent-100: #ddfbe1;
+        --color-accent-200: #bcf6c5;
+        --color-accent-300: #88ed99;
+        --color-accent-400: #53dd6c;
+        --color-accent-500: #25c242;
+        --color-accent-600: #18a132;
+        --color-accent-700: #177e2a;
+        --color-accent-800: #176426;
+        --color-accent-900: #155222;
+        --color-accent-950: #062d0f;
+
+
     --color-offWhite: #F9FAFB;
+        --color-offWhite-50: #f9fafb;
+        --color-offWhite-100: #eceff2;
+        --color-offWhite-200: #d5dde2;
+        --color-offWhite-300: #b0bfc9;
+        --color-offWhite-400: #859bab;
+        --color-offWhite-500: #668091;
+        --color-offWhite-600: #516778;
+        --color-offWhite-700: #425462;
+        --color-offWhite-800: #394753;
+        --color-offWhite-900: #333e47;
+        --color-offWhite-950: #22292f;
+
+
     --color-offWhite1A: #F4F4F9;
+        --color-offWhite1A-50: #f4f4f9;
+        --color-offWhite1A-100: #e7e7f2;
+        --color-offWhite1A-200: #d5d5e8;
+        --color-offWhite1A-300: #b8b9d8;
+        --color-offWhite1A-400: #9697c4;
+        --color-offWhite1A-500: #807db4;
+        --color-offWhite1A-600: #726ba5;
+        --color-offWhite1A-700: #695f96;
+        --color-offWhite1A-800: #5a517c;
+        --color-offWhite1A-900: #4a4464;
+        --color-offWhite1A-950: #302d3e;
+
+
     --color-gray1B: #D9D9D9;
+        --color-gray1B-50: #f7f7f7;
+        --color-gray1B-100: #ededed;
+        --color-gray1B-200: #d9d9d9;
+        --color-gray1B-300: #c8c8c8;
+        --color-gray1B-400: #adadad;
+        --color-gray1B-500: #999999;
+        --color-gray1B-600: #888888;
+        --color-gray1B-700: #7b7b7b;
+        --color-gray1B-800: #676767;
+        --color-gray1B-900: #545454;
+        --color-gray1B-950: #363636;
+
+
 }
 
 @theme {
