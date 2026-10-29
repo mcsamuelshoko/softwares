@@ -13,7 +13,7 @@ export interface Props {
 const { baseUrl } = Astro.props;
 ---
 
-<section id="projects" class="p-8">
+<section id="projects" class="p-8 container mx-auto">
   <SectionPage>
     <p class="text-4xl lg:text-6xl font-display font-bold">Projects</p>
     <p class="text-2xl font-display font-medium opacity-50">Stuff i&apos;ve made that works</p>
@@ -31,7 +31,9 @@ const { baseUrl } = Astro.props;
         ))
       }
     </div>
-    <Button title="Github reposiories" linkUrl={SOCIAL_URLS.githubRepositories} target="blank" border={true}  />
+    <div class="flex">
+      <Button title="Github repositories" linkUrl={SOCIAL_URLS.githubRepositories} target="blank" border={true}  />
+    </div>
 
   </SectionPage>
 </section>
